@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D3DEC8;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+#unpopulated-state {
+    width: 700px;
+    height: 530px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1#heading {
+    position: absolute;
+    width: 360px;
+    height: 80px;
+    left: 52px;
+    top: 20px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    color: #2B283A;
+}
+
+#highlight {
+    color: #10B981;
+}
+
+p#para {
+    position: absolute;
+    width: 380px;
+    height: 28px;
+    left: 52px;
+    top: 125px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #6B7280;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 17px;
+    gap: 12px;
+
+    position: absolute;
+    width: 191px;
+    height: 42px;
+    left: 52px;
+    top: 204px;
+    background: #10B981;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#customize-pw {
+    position: absolute;
+    width: 596px;
+    left: 52px;
+    top: 281px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #6B7280;
+
+}
+
+#customize-pw input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+
+    color: #10B981;
+    background-color: #EBEBEB;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 6px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    line-height: 26px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#password-length {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+#error-message {
+    margin: 0px 0px 0px 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: firebrick;
+}
+
+#custom-characters {
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+    accent-color: #10B981;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #6B7280;
+}
+
+#custom-characters label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+#custom-characters input[type="checkbox"] {
+    background-color: #EBEBEB;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#custom-characters input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 1px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    border-radius: 1px;
+    transform: scale(0) rotate(45deg);
+    transition: transform 0.2s ease-out;
+}
+
+#custom-characters input[type="checkbox"]:checked {
+    background: #10B981;
+}
+
+#custom-characters input[type="checkbox"]:checked::after {
+    transform: scale(1) rotate(45deg);
+}
+
+hr {
+    position: absolute;
+    width: 596px;
+    left: 52px;
+    top: 381px;
+    border: 1px solid #D5D4D8;
+}
+
+#password-one {
+    position: absolute;
+    width: 280px;
+    height: 39px;
+    left: 52px;
+    top: 416px;
+
+    text-align: center;
+    align-content: center;
+    background: #335e4f;
+    border-radius: 6px;
+    color: #0de29b;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+#password-two {
+    position: absolute;
+    width: 280px;
+    height: 39px;
+    left: 370px;
+    top: 416px;
+
+    text-align: center;
+    align-content: center;
+    background: #335e4f;
+    border-radius: 6px;
+    color: #0de29b;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.toggle-container {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #10B981;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+body.dark-mode {
+    background: #1C1C1C;
+}
+
+body.dark-mode #unpopulated-state {
+    background: #1F2937;
+}
+
+body.dark-mode h1#heading {
+    color: #FFFFFF;
+}
+
+body.dark-mode p#para{
+    color: #D5D4D8;
+}
+
+body.dark-mode #password-one,
+body.dark-mode #password-two {
+    background: #273549;
+    color: #10B981;
+}
